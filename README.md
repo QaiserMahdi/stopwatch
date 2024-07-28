@@ -1,5 +1,8 @@
 # Stopwatch Application
 
+![image](https://github.com/user-attachments/assets/6747289d-57ef-4217-942a-f830e52697d5)
+
+
 This is a simple Stopwatch application built using React.js library. The application allows users to start, pause, stop, and reset the stopwatch timer. Additionally, it displays the elapsed time whenever the "Stop" button is clicked.
 
 ## Features
