@@ -1,1 +1,113 @@
-/* css file for stopwatch */
+/* src/Stopwatch.css */
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.stopwatch {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stopwatch h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.display {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buttons .start {
+  background-color: #28a745; /* Green */
+}
+
+.buttons .start:hover {
+  background-color: #218838;
+}
+
+.buttons .reset {
+  background-color: #dc3545; /* Red */
+}
+
+.buttons .reset:hover {
+  background-color: #c82333;
+}
+
+.buttons .stop {
+  background-color: #61dafb; /* Default blue */
+  color: #282c34;
+}
+
+.buttons .stop:hover {
+  background-color: #21a1f1;
+}
+
+.elapsed-time {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stopwatch h1 {
+    font-size: 1.5em;
+  }
+
+  .display {
+    font-size: 2em;
+  }
+
+  .buttons button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .elapsed-time {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .stopwatch h1 {
+    font-size: 1.2em;
+  }
+
+  .display {
+    font-size: 1.5em;
+  }
+
+  .buttons button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+
+  .elapsed-time {
+    font-size: 1em;
+  }
+}
